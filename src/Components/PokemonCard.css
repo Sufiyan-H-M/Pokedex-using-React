@@ -1,0 +1,26 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.card{
+    width: 150px;
+    height: 200px;
+    background-color: rgb(243, 243, 243);
+    box-shadow: 0px 0px 7px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.card img{
+    width: 100px;
+}
+
+.PID{
+    color: rgb(115, 115, 115);
+}
