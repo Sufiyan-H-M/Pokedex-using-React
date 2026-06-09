@@ -1,0 +1,94 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-size: small;
+}
+
+/* Shared badge style */
+.fire, .water, .grass, .electric, .ice, .fighting, .poison, .ground,
+.flying, .psychic, .bug, .rock, .ghost, .dragon, .dark, .steel, .fairy ,.normal{
+    padding: 3px 7px;
+    border-radius: 60px;
+    color: white;
+    display: inline-block;
+}
+
+/* Individual type colors */
+.fire {
+    background-color: #F08030;
+}
+
+.water {
+    background-color: #6890F0;
+}
+
+.grass {
+    background-color: #78C850;
+}
+
+.electric {
+    background-color: #F8D030;
+    color: black;
+}
+
+.ice {
+    background-color: #98D8D8;
+    color: black;
+}
+
+.fighting {
+    background-color: #C03028;
+}
+
+.poison {
+    background-color: #A040A0;
+}
+
+.ground {
+    background-color: #E0C068;
+    color: black;
+}
+
+.flying {
+    background-color: #A890F0;
+}
+
+.psychic {
+    background-color: #F85888;
+}
+
+.bug {
+    background-color: #A8B820;
+    color: black;
+}
+
+.rock {
+    background-color: #B8A038;
+    color: black;
+}
+
+.ghost {
+    background-color: #705898;
+}
+
+.dragon {
+    background-color: #7038F8;
+}
+
+.dark {
+    background-color: #705848;
+}
+
+.steel {
+    background-color: #B8B8D0;
+    color: black;
+}
+
+.fairy {
+    background-color: #EE99AC;
+}
+
+.normal{
+    background-color: #949494;
+}

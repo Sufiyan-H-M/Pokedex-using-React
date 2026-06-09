@@ -5,7 +5,7 @@ import PokemonList from './Components/PokemonList'
 
 const App = () => {
   const pokemonIds = [];
-  for(let i = 1; i <= 150; i++){
+  for(let i = 1; i <= 151; i++){
     pokemonIds.push(i);
   }
   console.log(pokemonIds);

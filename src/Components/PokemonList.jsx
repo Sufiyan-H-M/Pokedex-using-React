@@ -31,11 +31,20 @@ const PokemonList = ({pokeID}) => {
             </>
         )
     } else {
-        return (
+        if(pokeData.types[1]?.type?.name){
+            return (
+            <>
+                <PokemonCard id={pokeData.id} name={pokeData.name} sprite={pokeData.sprites.front_default} type={pokeData.types[0].type.name} type2={pokeData.types[1].type.name?pokeData.types[1].type.name:""}/> 
+            </>
+        )
+        } else {
+            return (
             <>
                 <PokemonCard id={pokeData.id} name={pokeData.name} sprite={pokeData.sprites.front_default} type={pokeData.types[0].type.name}/> 
             </>
-        )
+                )
+        }
+        
     }
   
 }
