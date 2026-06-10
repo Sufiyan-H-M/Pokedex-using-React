@@ -2,10 +2,16 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-
+    --primary-color: rgb(128, 0, 255);
+    --background-color: rgb(173, 173, 173);
 }
 
+
+
 .pokemon-grid{
-    display: flex;
-    background-color: aqua;
+    display: grid;
+     grid-template-columns: repeat(7,1fr);
+     gap: 30px;
+    margin-left: auto;
+    margin-left: 40px; 
 }

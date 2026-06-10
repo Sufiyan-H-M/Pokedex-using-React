@@ -1,19 +1,17 @@
 import React, { useEffect, useState } from 'react'
 import PokemonCard from './PokemonCard';
 
-const PokemonList = ({pokeID}) => {
+const PokemonList = ({pokemonUrl}) => {
+
+  
 
     const [pokeData, setPokeData] = useState(null);
 
-    let name = "";
-    async function fetchPokemonInfo(id) {
+    async function fetchPokemonInfo(url) {
         try{
-            const response = await fetch(`https://pokeapi.co/api/v2/pokemon/${id}/`);
+            const response = await fetch(url);
             const data = await response.json();
-            console.log(data);
             setPokeData(data);
-            console.log(data.name)
-            name = data.name;
         } catch(error){
             console.error("Failed to get Pokemon:", error);
         }
@@ -21,8 +19,10 @@ const PokemonList = ({pokeID}) => {
     };
 
     useEffect(()=>{
-        fetchPokemonInfo(pokeID);
-    }, []);
+        fetchPokemonInfo(pokemonUrl);
+    }, [pokemonUrl]);
+
+
 
     if(!pokeData){
         return (
@@ -46,7 +46,10 @@ const PokemonList = ({pokeID}) => {
         }
         
     }
+
+        
   
 }
 
 export default PokemonList
+

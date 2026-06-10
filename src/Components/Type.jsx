@@ -119,6 +119,7 @@ const Type = ({ type , type2}) => {
         default:
             return null
     }
+    
 }
 
 export default Type
