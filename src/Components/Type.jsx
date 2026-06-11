@@ -116,6 +116,8 @@ const Type = ({ type , type2}) => {
         case "normal":
             return <div className="normal">Normal</div>
 
+        case "none":
+            return 
         default:
             return null
     }
