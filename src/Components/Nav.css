@@ -8,7 +8,7 @@
 nav{
     width: 100%;
     background-color: var(--primary-color);
-    height: 80px;
+    height: 10vh;
     margin-bottom: 30px;
     color: rgb(204, 204, 204);
     display: grid;
